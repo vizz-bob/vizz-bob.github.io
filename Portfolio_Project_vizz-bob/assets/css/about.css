@@ -1,0 +1,213 @@
+*
+{
+    margin: 0 auto;
+    padding: 0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+:root {
+	/* Base font size */
+	font-size: 15px;
+
+	/* Heading height variable*/
+	--heading-height: 25em;
+}
+
+body {
+	font-family: "Roboto", Arial, sans-serif;
+	min-height: 100vh;
+	background-color: rgb(90, 44, 170);
+}
+.topnav 
+{
+    height: 0px;
+    width: 1440px;
+    display: flex;
+    position: fixed;
+    background: rgb(175, 188, 223);
+    font-size: 10px;
+    line-height: 0px;
+    z-index: 1;
+}
+.topnav {
+    height: 42px;
+}
+
+ul {
+    margin: 10px auto;
+    width: 1200px;
+    list-style: none;
+    background: rgba(187, 23, 23, 0.2);
+}
+
+li {
+    margin-top: 26px;
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    font-size: 17px;
+    transition: 3s;
+    padding: 15px 45px;
+}
+
+li a:hover {
+    transition: 1s;
+    background: rgba(255, 255, 255, 0.7);
+    color: #000;
+}
+header {
+	position: absolute;
+	width: 100%;
+    height: var(--heading-height);
+    background-color: rgb(136, 77, 238);
+}
+
+/* Create angled background with 'before' pseudo-element */
+header::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: -7em;
+	width: 100%;
+	height: calc(var(--heading-height) + 2em);
+	z-index: 2;
+    transform: skewY(-3.5deg);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+	background: 
+		url(/assets/imgs/fix_background.jpg) no-repeat center,
+		linear-gradient(#4e4376, #2b5876);
+	background-size: cover;
+	border-bottom: .2em solid #fff;
+}
+
+h1 {
+	font-size: calc(2.8em + 2.6vw);
+	font-weight: 700;
+	letter-spacing: .01em;
+	padding: 0rem 0 0 2rem;
+	text-shadow: .12em .10em .022em rgb(24, 10, 83);
+	color: #fff;
+}
+
+main {
+    padding: calc(var(--heading-height) + 1.5vw) 4em 0;
+    display: flex;
+    background-color: #374bce
+}
+
+.right-c {
+	font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 50px;
+    margin-bottom: 0em;
+    margin-left: 350px;
+    padding: 0 80px;
+    color: #e9e8f1;
+    flex:1;
+}
+
+.b-item
+{
+    left: 130px;
+    z-index: 2;
+    margin: 5px;
+    margin-top: 180px;
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: 4px 5px 5px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 1s ease-in-out;
+    padding: 40px 20px;
+    height: 701px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    position: relative;
+}
+.hollow
+{
+    z-index: 1 !important;
+    margin: 0;
+    position: absolute !important;
+    left: -130px;
+    top: -20px;
+}
+.b-head
+{
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    background-color: #333;
+    color: white;
+    height: 40px;
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+.b-body, .b-body .expertise
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.expertise img
+{
+    width: 100px;
+}
+.copyright 
+{ 
+    overflow: hidden; 
+    padding: 3em 0em; 
+    border-top: 20px solid rgba(255, 255, 255, 0.08); 
+    text-align: center; 
+    background: #4CAF50; 
+} 
+.copyright p 
+{ 
+    letter-spacing: 1px; 
+    font-size: 0.90em; 
+    color: rgba(255, 255, 255, 0.6); 
+} 
+.copyright a 
+{ 
+    text-decoration: none; 
+    color: rgba(255, 255, 255, 0.8); 
+}
+footer .first
+{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(140, 67, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .first img
+{
+    margin: auto 10px;
+    height: 40px;
+    width: 40px;
+}
+
+footer .second 
+{
+    height: 30px;
+    background-color: #333;
+    text-align: center;
+    line-height: 30px;
+}
+
+footer .third
+{
+    height: 30px;
+    background-color: rgb(248, 233, 233);
+}
