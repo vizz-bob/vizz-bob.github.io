@@ -424,14 +424,14 @@ video#bgvid {
 }
 
 #normal{
-  background-image: url("../imgs/boby_pic.jpg");
+  background-image: url("../imgs/Boby_pic.png");
   background-size: cover;
 }
 
 
 #invert{
   animation: mask 3s steps(69) infinite alternate;
-  background-image: url("../imgs/boby_pic.jpg");
+  background-image: url("../imgs/Boby_pic.png");
   background-size: cover;
   filter: invert(1.0) grayscale(1.0);
   -webkit-mask: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/141041/sheet.png');
